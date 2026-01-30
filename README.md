@@ -2,6 +2,22 @@
 
 This Turborepo starter is maintained by the Turborepo core team.
 
+## Guideline
+To install new dependencies, follow this formula
+```sh
+yarn workspace <workspace name> add <package name>
+```
+For example, to add new package to the frontend workspace
+```sh
+yarn workspace web add clsx
+```
+Here's the list of current monorepo workspaces:
+```sh
+web -> frontend
+api -> backend
+packages -> eslint + typescript config
+```
+
 ## Using this example
 
 Run the following command:
