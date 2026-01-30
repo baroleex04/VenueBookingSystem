@@ -1601,7 +1601,8 @@ __metadata:
     eslint-config-prettier: "npm:^10.1.1"
     eslint-plugin-only-warn: "npm:^1.1.0"
     eslint-plugin-react: "npm:^7.37.5"
-    eslint-plugin-react-hooks: "npm:^5.2.0"
+    eslint-plugin-react-hooks: "npm:^7.0.1"
+    eslint-plugin-react-refresh: "npm:^0.4.26"
     eslint-plugin-turbo: "npm:^2.7.1"
     globals: "npm:^16.5.0"
     typescript: "npm:^5.9.2"
@@ -4073,15 +4074,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "eslint-plugin-react-hooks@npm:5.2.0"
-  peerDependencies:
-    eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
-  checksum: 10c0/1c8d50fa5984c6dea32470651807d2922cc3934cf3425e78f84a24c2dfd972e7f019bee84aefb27e0cf2c13fea0ac1d4473267727408feeb1c56333ca1489385
-  languageName: node
-  linkType: hard
-
 "eslint-plugin-react-hooks@npm:^7.0.1":
   version: 7.0.1
   resolution: "eslint-plugin-react-hooks@npm:7.0.1"
@@ -4097,7 +4089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-refresh@npm:^0.4.24":
+"eslint-plugin-react-refresh@npm:^0.4.24, eslint-plugin-react-refresh@npm:^0.4.26":
   version: 0.4.26
   resolution: "eslint-plugin-react-refresh@npm:0.4.26"
   peerDependencies:
