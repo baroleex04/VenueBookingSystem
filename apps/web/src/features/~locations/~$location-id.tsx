@@ -518,36 +518,17 @@ function LocationDetailPage() {
                           </div>
                         </div>
 
-                        {/* Price and View Details Button */}
-                        <div className="flex items-center justify-between border-t border-gray-100 pt-4">
-                          <div>
-                            <div className="flex items-center gap-1 text-primary">
-                              <DollarSign className="size-5" />
-                              <span className="text-2xl font-bold">
-                                {venue.pricePerHour.toLocaleString()}
-                              </span>
-                            </div>
-                            <span className="text-xs text-gray-500">
-                              per hour
+                        {/* Price */}
+                        <div className="border-t border-gray-100 pt-4">
+                          <div className="flex items-center gap-1 text-primary">
+                            <DollarSign className="size-5" />
+                            <span className="text-2xl font-bold">
+                              {venue.pricePerHour.toLocaleString()}
                             </span>
                           </div>
-                          <button
-                            onClick={() => {
-                              // Create unique venue ID from location_id and venue name
-                              const venueId = `${locationId}-${venue.name.replace(/\s+/g, '-')}`;
-                              console.log('Navigating to venue:', venue.name);
-                              console.log('Location ID:', locationId);
-                              console.log('Generated venue ID:', venueId);
-                              navigate({
-                                to: '/venues/$id',
-                                params: { id: venueId },
-                              });
-                            }}
-                            disabled={!venue.isActive}
-                            className="btn-primary disabled:cursor-not-allowed disabled:opacity-50"
-                          >
-                            View Details
-                          </button>
+                          <span className="text-xs text-gray-500">
+                            per hour
+                          </span>
                         </div>
                       </div>
                     </div>
